@@ -151,7 +151,7 @@ HandleTouch() {
         return;
     }
 
-    float scale = llVecMag(v) / TouchSize;
+    float scale = llVecMag(v * 2) / TouchSize;
     // Determine if they have moved towards the center (shrinking) or away (enlarging).
     //    For resizing from the lower left:  if (v.y < 0 && v.z > 0) {
     //    For resizing from the lower right: if (v.y > 0 && v.z > 0) {
